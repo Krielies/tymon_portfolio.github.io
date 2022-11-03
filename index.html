@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" type="text/javascript"></script>
+    <link href="Stylesheet/stylesheet.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>My Portfolio</title>
+
+</head>
+
+<body style="background-color: rgb(134, 134, 134);">
+    <div class="row" style="height: 75px;"></div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-11" id="name_tab" style="color: black; height: 500px;">
+            <div class="row justify-content-evenly">
+                <div class="col-4">
+                    <div style="height: 100px;"></div>
+                    <div class="row">
+                        <h1>My name is Tymon Kakol</h1>
+                    </div>
+                    <div style="height: 200px;"></div>
+                    <div class="row text-center">
+                        <h3>Softfare Developer</h1>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <img src="Content/Images/pic_of_me.png" style="height: 425px;" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row" style="height: 75px;"></div>
+    <div class="row justify-content-between">
+        <div class="col-2"></div>
+        <div class="col-6">
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="row" style="height: 200px;">
+                    <h1>Who am I?</h1>
+                    <p>My name is Tymon Kakol and I am 18 years old, I come from Poland, Gdansk. I am currently in my
+                        second year of software development at Sint Lucas. I speak English fluently and Dutch/Polish
+                        well and I can also write in all three languages. During my free time I enjoy reading, playing
+                        games and watching videos. I am used to working with Unity and I can write in C#, html, css and
+                        JavaScript. At school I have also gone through a gameplay course as well as an agile game
+                        productions course. While working on different projects I have used the Scrum method to plan
+                        with my teammates, We also made a few technical design documents as well as gameplay design
+                        documents. </p>
+                </div>
+                <div class="row" style="height: 200px;">
+                    <h1>What do I Know</h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+            <h1>Contact me</h1>
+            <div style="margin-left:10%">
+                <a href="https://www.linkedin.com/in/tymon-kakol-0ba749237/" target="_blank"
+                    style="color: blue; ;">Name: Tymon Kakol</a>
+                <br>
+                <br>
+                <div>
+                    <p>Email adress:
+                        <a href="mailto: tymonkakol@gmail.com" style="color: blue;">tymonkakol@gmail.com</a>
+                    </p>
+
+
+                </div>
+                <p>Phone number: 0655546397</p>
+                <p></p>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row justify-content-center">
+        <div class="col" style="height: 250px;">
+            <input id="left_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="rotate()" style="height: 200px;">  
+        </div>        
+        <div id="" class="col">
+            <input id="left_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="rotate()" style="height: 300px;">
+        </div>
+
+        <div class="col" style="height: 250px;">
+            <input id="left_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="rotate()" style="height: 200px;">
+        </div>
+    </div> -->
+    <div id="carusel">
+        <input id="left_slide" type="image" src="Content/Images/thumbnails/cake_project_screenshot.png" onclick="rotate_left()">      
+        <input id="middle_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="call_forth_the_project()" data-bs-toggle="modal" data-bs-target="#pop_up">            
+        <input id="right_slide" type="image" src="Content/Images/thumbnails/fps_game.png" onclick="rotate_right()"> 
+       
+    </div>
+    <div class="modal fade" id="pop_up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+
+</html>
