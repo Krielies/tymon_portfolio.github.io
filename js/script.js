@@ -58,5 +58,5 @@ function rotate_right(){
     document.getElementById('right_slide').src = pic_3; 
 }
 function call_forth_the_project(){
-
+    $("#simpleModal").modal('show');
 }

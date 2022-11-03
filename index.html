@@ -15,6 +15,7 @@
 </head>
 
 <body style="background-color: rgb(134, 134, 134);">
+    
     <div class="row" style="height: 75px;"></div>
     <div class="row">
         <div class="col-1"></div>
@@ -84,43 +85,33 @@
             </div>
         </div>
     </div>
-    <!-- <div class="row justify-content-center">
-        <div class="col" style="height: 250px;">
-            <input id="left_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="rotate()" style="height: 200px;">  
-        </div>        
-        <div id="" class="col">
-            <input id="left_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="rotate()" style="height: 300px;">
-        </div>
-
-        <div class="col" style="height: 250px;">
-            <input id="left_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="rotate()" style="height: 200px;">
-        </div>
-    </div> -->
     <div id="carusel">
         <input id="left_slide" type="image" src="Content/Images/thumbnails/cake_project_screenshot.png" onclick="rotate_left()">      
-        <input id="middle_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="call_forth_the_project()" data-bs-toggle="modal" data-bs-target="#pop_up">            
+        <input id="middle_slide" type="image" src="Content/Images/thumbnails/arc_proj_thumb.png" onclick="call_forth_the_project()" data-bs-toggle="modal" data-bs-target="#pop_up">
         <input id="right_slide" type="image" src="Content/Images/thumbnails/fps_game.png" onclick="rotate_right()"> 
        
     </div>
-    <div class="modal fade" id="pop_up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="pop_up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
+    </div>
+  </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
 </html>
